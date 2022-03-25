@@ -1,0 +1,10 @@
+dubbo:
+  registries:
+    xds:
+      protocol: xds-local
+      address: 127.0.0.1:18000
+  consumer:
+    references:
+      GreeterClientImpl:
+        protocol: tri
+        interface: com.apache.dubbo.sample.basic.IGreeter # must be compatible with grpc or dubbo-java

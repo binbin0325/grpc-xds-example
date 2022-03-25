@@ -56,7 +56,6 @@ func main() {
 			log.Fatalf("could not greet: %v", err)
 		}
 		log.Printf("RPC Response: %v %v", i, r)
-		time.Sleep(5 * time.Second)
+		time.Sleep(1 * time.Second)
 	}
-
 }
