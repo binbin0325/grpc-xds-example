@@ -96,7 +96,7 @@ $ go run src/grpc_client.go
 2021/06/15 10:48:11 RPC Response: 9 message:"Hello unary RPC msg   from server1" 
 2021/06/15 10:48:16 RPC Response: 10 message:"Hello unary RPC msg   from server1" 
 2021/06/15 10:48:21 RPC Response: 11 message:"Hello unary RPC msg   from server1" 
-2021/06/15 10:48:26 RPC Response: 12 message:"Hello unary RPC msg   from server2"   <<<<<<<<<<<
+2021/06/15 10:48:26 RPC Response: 12 message:"Hello unary RPC msg   from server2"  
 2021/06/15 10:48:31 RPC Response: 13 message:"Hello unary RPC msg   from server2" 
 2021/06/15 10:48:36 RPC Response: 14 message:"Hello unary RPC msg   from server2" 
 ```
