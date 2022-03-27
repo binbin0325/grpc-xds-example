@@ -21,9 +21,9 @@ import (
 )
 
 const (
-	ClusterName     = "*"
+	ClusterName     = "dubbo-go-app.default.svc.cluster.local:20000"
 	RouteName       = "be-srv-route"
-	ListenerName    = "be-srv"
+	ListenerName    = ""
 	ListenerPort    = 50051
 	UpstreamHost    = "be.cluster.local"
 	UpstreamPort    = 50051
@@ -164,8 +164,8 @@ func GenerateSnapshot() cache.Snapshot {
 		map[resource.Type][]types.Resource{
 			resource.EndpointType: {makeEndpoint(ClusterName)},
 			resource.ClusterType:  {makeCluster(ClusterName)},
-			resource.RouteType:    {makeRoute(RouteName, ClusterName)},
-			resource.ListenerType: {makeHTTPListener(ListenerName, RouteName)},
+			/*resource.RouteType:    {makeRoute(RouteName, ClusterName)},
+			resource.ListenerType: {makeHTTPListener(ListenerName, RouteName)},*/
 		},
 	)
 	return snap
